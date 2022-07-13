@@ -45,14 +45,16 @@
                                             <div class="float-end">
                                                 <a href="auth-recoverpw.html" class="text-muted font-size-13">Forgot password?</a>
                                             </div>
+                                            <div class="mb-4">
+                                            <!-- <div class="field input"> -->
                                             <label class="form-label">Password</label>
-                                            <div class="input-group mb-3 bg-soft-light rounded-3">
-                                                <span class="input-group-text text-muted" id="basic-addon4">
-                                                    <i class="ri-lock-2-line"></i>
-                                                </span>
-                                                <input name="password" type="password" class="form-control form-control-lg border-light bg-soft-light" placeholder="Enter Password" aria-label="Enter Password" aria-describedby="basic-addon4">
-                                                
+                                            <div class="input-group mb-3">
+                                            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                            <input class="form-control" id="pass" type="password"  name="password" placeholder="Password" value="">
+                                            <span class="input-group-text"id="icon-click"><i class="fas fa-eye" id="icon"></i></span>
                                             </div>
+                                            <!-- </div> -->
+                                        </div>
                                         </div>
 
                                         <div class="form-check mb-4">
@@ -91,6 +93,8 @@
 
         <script src="assets/js/app.js"></script>
         <script src="javascript/login.js"></script>
+        <script src="javascript/pass-show.js"></script>
+
 
     </body>
 
