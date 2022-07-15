@@ -1,5 +1,5 @@
-const searchBar = document.querySelector(".search1 input"),
-searchIcon   = document.querySelector(".search1 button"),
+const searchBar = document.querySelector(".search input"),
+searchIcon   = document.querySelector(".search button"),
 usersList = document.querySelector(".users-list");
 
 searchIcon.onclick = ()=>{
@@ -48,3 +48,9 @@ setInterval(()=>{
     }
   }
 }, 500);
+
+
+
+
+
+

@@ -115,7 +115,7 @@
                                             <i class="ri-more-2-fill"></i>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-end">
-                                            <a class="dropdown-item" href="#">Edit</a>
+                                            <a class="dropdown-item" href="update.html">Edit</a>
                                             <a class="dropdown-item" href="#">Action</a>
                                             <div class="dropdown-divider"></div>
                                             <a class="dropdown-item" href="#">Another action</a>
@@ -367,21 +367,18 @@
                     <div class="tab-pane fade show active" id="pills-chat" role="tabpanel" aria-labelledby="pills-chat-tab">
                         <!-- Start chats content -->
                         <section class="users">
-                           <div class="search1"> 
+                           <div class="search"> 
                             <div class="px-4 pt-4">
                                 <h4 class="mb-4">Chats</h4>                            
                                     <div class="search-box chat-search-box">            
                                         <div class="input-group mb-3 rounded-3">
-                                        <input type="text" class="form-control bg-light" placeholder="Search messages or users" aria-label="Search messages or users" aria-describedby="basic-addon1">
-                                            <button class="input-group-text text-muted bg-light pe-1 ps-3" id="basic-addon1">
-                                            <i class="fas fa-search"></i>
-                                            </button>     
+                                        <input type="text"class="form-control bg-light" placeholder="Search messages or users" aria-label="Search messages or users" aria-describedby="basic-addon1">
+                                        <button class="input-group-text"><i class="fas fa-search"></i></button>    
                                         </div> 
                                     </div>
                                 </div>
                                 <!-- Search Box-->
-                            </div> <!-- .p-4 -->
-    
+                           </div> <!-- .p-4 -->                            
                             <!-- Start user status -->
                             
                             <!-- end user status -->

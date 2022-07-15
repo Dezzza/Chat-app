@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+</head>
+<body>
+    <div class="container col-6 mt-5">
+        <div class="card">
+           <div class="card-header">
+              <center>
+               <h3><b>UPDATE ACCOUNT</b></h3> 
+              </center>
+           </div>
+            <div class="card-body">
+               <form method="POST" id="formdatas" enctype="multipart/form-data">
+                  <div class="msg">
+                        
+                  </div>
+                    <div class="col-12">
+                 <input type="text" name="fname" class="form-control mb-2" placeholder="Enter Firstname....."  >
+                    </div>
+                    <div class="col-12">
+                 <input type="text" name="lname" class="form-control mb-2" placeholder="Enter Lastname....." >
+                    </div>
+                    <div class="col-12">
+                 <input type="text" name="phone" class="form-control mb-2" placeholder="Enter Phone Number....."  >
+                    </div>
+                    <div class="col-12">
+                 <input type="text" name="email" class="form-control mb-2" placeholder="Enter Email....."  >
+                    </div>
+                    <div class="col-12 row">
+                    <div class="col-4">
+                       <select name="day" id="" class="form-control mb-2">
+                           <option value="" selected disabled>--Day--</option>
+                       </select>
+                    </div>
+                    <div class="col-4">
+                       <select name="month" id="" class="form-control mb-2">
+                        <option value="" selected disabled>--Month--</option>
+                       </select>
+                    </div>
+                    <div class="col-4">
+                       <select name="year" id="" class="form-control mb-2">
+                        <option value="" selected disabled>--Year--</option>
+                       </select>
+                    </div>
+                    </div>
+                    <div class="col-12">
+                       <select name="gender" id="" class="form-control mb-2">
+                        <option value="" selected disabled>--Select Gender--</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+
+                       </select>
+                    </div>
+                    <div class="col-12">
+                      <select name="country" class="form-control mb-2" id="">
+                        <option value="" disabled selected>--Select Country--</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                 <input type="file" name="image" class="form-control mb-2" >
+                    </div>
+                    <div class="row">
+                    <div class="col-6">
+                 <input type="submit"  class="btn btn-success col-12 mb-2" value="update" name="update">
+                    </div>
+                    <div class="col-4">
+                 <a href="index.php"  style='float:right' class="btn btn-danger col-12 mb-2">Return</a>
+                    </div>
+                    </div>
+                    
+               </form>
+            </div>
+        </div>
+   </div>
+</body>
+</html>
+<script src="javascript/update.js"></script>
