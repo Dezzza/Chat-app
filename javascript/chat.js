@@ -41,7 +41,11 @@ chatBox.onmouseleave = ()=>{
 
 setInterval(() =>{
     let xhr = new XMLHttpRequest();
+<<<<<<< HEAD
     xhr.open("POST", "server/get-chat.php", true);
+=======
+    xhr.open("POST", "php/get-chat.php", true);
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
     xhr.onload = ()=>{
       if(xhr.readyState === XMLHttpRequest.DONE){
           if(xhr.status === 200){

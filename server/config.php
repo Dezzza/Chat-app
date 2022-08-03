@@ -8,6 +8,7 @@
    if (!$connection) {
      echo "Database connection failed" . mysqli_connect_error();
    }
+<<<<<<< HEAD
 
    function redirect()
  {
@@ -32,4 +33,6 @@
 	header('location:login.php');
 	}
  }
+=======
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
 ?>

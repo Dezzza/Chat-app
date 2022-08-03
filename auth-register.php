@@ -14,12 +14,21 @@
             <div class="container">
                 <div class="row justify-content-center p-4">
                     <div class="col-md-8 col-lg-6 col-xl-6">
+<<<<<<< HEAD
                         <div class="card">
                             <div class="card-body col-12 p-4">
                                     <form action="#" id="formdatas" method="POST" enctype="multipart/form-data">
                                     <div class="text-center">
                                         <h3 style="color: purple;"><b>REGISTER NOW</b></h3>                
                                     </div>
+=======
+                        <div class="text-center pt-4">
+                            <h3 style="color: purple;"><b>REGISTER NOW</b></h3>                
+                        </div>
+                        <div class="card">
+                            <div class="card-body col-12 p-4">
+                                    <form action="#" id="formdatas" method="POST" enctype="multipart/form-data">
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                                     <div class="msg">
                                         
                                         </div>
@@ -136,11 +145,17 @@
                                    </form>
                             </div>
                         </div>
+<<<<<<< HEAD
                         <div class="mt-2 text-center">
                             <p>Chat. Crafted with <i class="mdi mdi-heart text-danger"></i> by Dezza</p>
                         </div>
                         <div class="text-center">
                             <p class="text-muted mb-0">By registering you agree to the Dezza's <a href="#" class="text-primary">Terms of Use</a></p>
+=======
+
+                        <div class="text-center">
+                            <p class="text-muted mb-0">By registering you agree to the Wimit <a href="#" class="text-primary">Terms of Use</a></p>
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                             <p>© <script>document.write(new Date().getFullYear())</script></p>
                             <!-- <p>© <script>document.write(new Date().getFullYear())</script> Chatvia. Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand</p> -->
                         </div>

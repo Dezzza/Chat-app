@@ -1,8 +1,18 @@
+<<<<<<< HEAD
 const searchBar = document.querySelector(".search-box input"),
 searchIcon   = document.querySelector(".search-box button"),
 usersList = document.querySelector(".users-list");
 
 searchIcon.onclick = ()=>{
+=======
+const searchBar = document.querySelector(".search input"),
+searchIcon   = document.querySelector(".search button"),
+usersList = document.querySelector(".users-list");
+
+searchIcon.onclick = ()=>{
+  searchBar.classList.toogle("show");
+  searchIcon.classList.toogle("active");
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
   searchBar.focus();
   if (searchBar.classList.contains("active")) {
     searchBar.value="";
@@ -45,6 +55,7 @@ setInterval(()=>{
       }
     }
   }
+<<<<<<< HEAD
   xhr.send();
 }, 500);
 
@@ -68,6 +79,11 @@ setInterval(()=>{
 //     switchButton.classList.toggle('active');
 //     workContainer.classList.toggle('dark');
 // }
+=======
+}, 500);
+
+
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
 
 
 

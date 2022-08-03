@@ -4,6 +4,7 @@
     if(!isset($_SESSION['unique_id'])){
         header("location: auth-login.php");
     }
+<<<<<<< HEAD
     redirect();
 ?>
 
@@ -12,19 +13,35 @@
     <body>
 
 
+=======
+?>
+
+
+<?php include_once "header.php";?>
+
+    <body>
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
         <div class="layout-wrapper d-lg-flex">
 
             <!-- Start left sidebar-menu -->
             <div class="side-menu flex-lg-column me-lg-1 ms-lg-0">
                 <!-- LOGO -->
                 <div class="navbar-brand-box">
+<<<<<<< HEAD
                     <a href="index.php" class="logo logo-dark">
+=======
+                    <a href="index.html" class="logo logo-dark">
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                         <span class="logo-sm">
                             <img src="assets/images/logo.svg" alt="" height="30">
                         </span>
                     </a>
 
+<<<<<<< HEAD
                     <a href="index.php" class="logo logo-light">
+=======
+                    <a href="index.html" class="logo logo-light">
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                         <span class="logo-sm">
                             <img src="assets/images/logo.svg" alt="" height="30">
                         </span>
@@ -34,12 +51,15 @@
 
                 <!-- Start side-menu nav -->
                 <div class="flex-lg-column my-auto">
+<<<<<<< HEAD
                 <?php 
                     $sql = mysqli_query($connection, "SELECT * FROM users WHERE unique_id = {$_SESSION['unique_id']}");
                     if(mysqli_num_rows($sql) > 0){
                     $row = mysqli_fetch_assoc($sql);
                     }
                 ?>
+=======
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                     <ul class="nav nav-pills side-menu-nav justify-content-center" role="tablist">
                         <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Profile">
                             <a class="nav-link" id="pills-user-tab" data-bs-toggle="pill" href="#pills-user" role="tab">
@@ -68,7 +88,11 @@
                         </li>
                         <li class="nav-item dropdown profile-user-dropdown d-inline-block d-lg-none">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<<<<<<< HEAD
                                 <img src="server/uploads/<?php echo $row['img']?>" alt="" class="profile-user rounded-circle">
+=======
+                                <img src="assets/images/users/avatar-1.jpg" alt="" class="profile-user rounded-circle">
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                             </a>
                             <div class="dropdown-menu">
                                 <div class="dropdown-divider"></div>
@@ -124,12 +148,19 @@
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-end">
                                             <a class="dropdown-item" href="update.html">Edit</a>
+<<<<<<< HEAD
                                             <a class="dropdown-item" href="server/delete.php?delete_id=<?php echo $row['unique_id']?>" id="delete">Delete Account</a>
+=======
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Another action</a>
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                                         </div>
                                     </div>
                                 </div>
                                 <h4 class="mb-0">My Profile</h4>
                             </div>
+<<<<<<< HEAD
                             <?php 
                             $sql1 = mysqli_query($connection, "SELECT * FROM users WHERE unique_id = {$_SESSION['unique_id']}" );
                             if(mysqli_num_rows($sql1) > 0){
@@ -138,6 +169,16 @@
                             ?>
                             <div class="text-center p-4 border-bottom">
                             <div class="mb-4">
+=======
+                                     <?php 
+                                      $sql1 = mysqli_query($connection, "SELECT * FROM users WHERE unique_id = {$_SESSION['unique_id']}" );
+                                        if(mysqli_num_rows($sql1) > 0){
+                                            $row1 = mysqli_fetch_assoc($sql1);
+                                        }
+                                     ?>
+                            <div class="text-center p-4 border-bottom">
+                                <div class="mb-4">
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                                     <img src="server/uploads/<?php echo $row1['img']?>" class="rounded-circle avatar-lg img-thumbnail" alt="">
                                 </div>
 
@@ -148,10 +189,28 @@
 
                             <!-- Start user-profile-desc -->
                             <div class="p-4 user-profile-desc" data-simplebar>
+<<<<<<< HEAD
                               
                                 <div id="tabprofile" class="accordion">
                                     <div class="accordion-item card border mb-2">
                                     <div id="about" class="accordion-collapse collapse show" aria-labelledby="about2" data-bs-parent="#tabprofile">
+=======
+                                <!-- <div class="text-muted">
+                                    <p class="mb-4">If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual.</p>
+                                </div> -->
+
+
+                                <div id="tabprofile" class="accordion">
+                                    <div class="accordion-item card border mb-2">
+                                        <div class="accordion-header" id="about2">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#about" aria-expanded="true" aria-controls="about">
+                                                <h5 class="font-size-14 m-0">
+                                                    <i class="ri-user-2-line me-2 ms-0 ms-0 align-middle d-inline-block"></i> About
+                                                </h5>
+                                            </button>
+                                        </div>
+                                        <div id="about" class="accordion-collapse collapse show" aria-labelledby="about2" data-bs-parent="#tabprofile">
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                                             <div class="accordion-body">
                                                 <div>
                                                     <p class="text-muted mb-1">Name</p>
@@ -362,6 +421,7 @@
                     <div class="tab-pane fade show active" id="pills-chat" role="tabpanel" aria-labelledby="pills-chat-tab">
                         <!-- Start chats content -->
                         <section class="users">
+<<<<<<< HEAD
                         <?php 
                             $sql = mysqli_query($connection, "SELECT * FROM users WHERE unique_id = {$_SESSION['unique_id']}");
                             if(mysqli_num_rows($sql) > 0){
@@ -381,11 +441,26 @@
                                 </div> <!-- Search Box-->
                             </div> <!-- .p-4 -->
     
+=======
+                           <div class="search"> 
+                            <div class="px-4 pt-4">
+                                <h4 class="mb-4">Chats</h4>                            
+                                    <div class="search-box chat-search-box">            
+                                        <div class="input-group mb-3 rounded-3">
+                                        <input type="text"class="form-control bg-light" placeholder="Search messages or users" aria-label="Search messages or users" aria-describedby="basic-addon1">
+                                        <button class="input-group-text"><i class="fas fa-search"></i></button>    
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!-- Search Box-->
+                           </div> <!-- .p-4 -->                            
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                             <!-- Start user status -->
                             
                             <!-- end user status -->
 
                             <!-- Start chat-message-list -->
+<<<<<<< HEAD
                             <div>
                                 <h5 class="mb-3 px-3 font-size-16">Recent</h5>
                                  
@@ -399,6 +474,59 @@
                         </div>
                         <!-- Start chats content -->
                         </section>
+=======
+                            <div class="users-list">
+                                <h5 class="mb-3 px-3 font-size-16">Recent</h5>
+
+                                <div class="chat-message-list px-2" data-simplebar>
+            
+                                    <ul class="list-unstyled chat-list chat-user-list">
+                                       
+    
+                                        <li class="unread">
+                                            <a href="#">
+                                                <div class="d-flex">
+                                                    <div class="chat-user-img away align-self-center me-3 ms-0">
+                                                        <img src="assets/images/users/avatar-3.jpg" class="rounded-circle avatar-xs" alt="">
+                                                        <span class="user-status"></span>
+                                                    </div>
+                                                    <div class="flex-grow-1 overflow-hidden">
+                                                        <h5 class="text-truncate font-size-15 mb-1">Mark Messer</h5>
+                                                        <p class="chat-user-message text-truncate mb-0"><i class="ri-image-fill align-middle me-1 ms-0"></i> Images</p>
+                                                    </div>
+                                                    <div class="font-size-11">12 min</div>        
+                                                    <div class="unread-message">
+                                                        <span class="badge badge-soft-danger rounded-pill">02</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+    
+                                    
+    
+                                        <li class="active">
+                                            <a href="#">
+                                                <div class="d-flex">
+                                                    <div class="chat-user-img online align-self-center me-3 ms-0">
+                                                        <img src="assets/images/users/avatar-4.jpg" class="rounded-circle avatar-xs" alt="">
+                                                        <span class="user-status"></span>
+                                                    </div>
+                                                    <div class="flex-grow-1 overflow-hidden">
+                                                        <h5 class="text-truncate font-size-15 mb-1">Doris Brown</h5>
+                                                        <p class="chat-user-message text-truncate mb-0">Nice to meet you</p>
+                                                    </div>    
+                                                    <div class="font-size-11">10:12 AM</div>
+                                                </div>
+                                            </a>
+                                        </li>
+ 
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End chat-message-list -->
+                        </section>
+                        <!-- Start chats content -->
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                     </div>
                     <!-- End chats tab-pane -->
                     
@@ -440,7 +568,12 @@
                                                                 Select Members
                                                             </button>
                                                         </div>
+<<<<<<< HEAD
 
+=======
+                                                        
+                                                    <div class="users-list">
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                                                         <div class="collapse" id="groupmembercollapse">
                                                             <div class="card border">
                                                                 <div class="card-header">
@@ -624,6 +757,10 @@
                                                             </div>
                                                         </div>
                                                     </div>
+<<<<<<< HEAD
+=======
+                                                    </div>
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                                                     <div class="mb-3">
                                                         <label for="addgroupdescription-input" class="form-label">Description</label>
                                                         <textarea class="form-control" id="addgroupdescription-input" rows="3" placeholder="Enter Description"></textarea>
@@ -639,6 +776,7 @@
                                 </div>
                                 <!-- End add group Modal -->
 
+<<<<<<< HEAD
                                 <div class="search-box chat-search-box">            
                                     <div class="input-group rounded-3">
                                         <span class="input-group-text text-muted bg-light pe-1 ps-3" id="basic-addon1">
@@ -653,6 +791,23 @@
                             <div class="p-4 chat-message-list chat-group-list" data-simplebar>
         
 
+=======
+                                <div class="search">
+                                <div class="search-box chat-search-box">            
+                                    <div class="input-group rounded-3">
+                                        <span class="input-group-text text-muted bg-light pe-1 ps-3" id="basic-addon1">
+                                            <button><i class="ri-search-line search-icon font-size-18"></i></button>
+                                        </span>
+                                        <input type="text" class="form-control bg-light" placeholder="Search groups..." aria-label="Search groups..." aria-describedby="basic-addon1">
+                                    </div> 
+                                </div> 
+                                </div><!-- Search Box-->
+                            </div>
+
+                            <!-- Start chat-group-list -->
+                            <div class="search">
+                            <div class="p-4 chat-message-list chat-group-list" data-simplebar>        
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                                 <ul class="list-unstyled chat-list">
                                     <li>
                                         <a href="#">
@@ -758,6 +913,10 @@
                                     </li>
                                 </ul>
                             </div>
+<<<<<<< HEAD
+=======
+                            </div>
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                             <!-- End chat-group-list -->
                         </div>
                         <!-- End Groups content -->
@@ -765,6 +924,10 @@
                     <!-- End groups tab-pane -->
 
                     <!-- Start contacts tab-pane -->
+<<<<<<< HEAD
+=======
+                    
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                     <div class="tab-pane" id="pills-contacts" role="tabpanel" aria-labelledby="pills-contacts-tab">
                         <!-- Start Contact content -->
                         <div>
@@ -812,9 +975,15 @@
                                 <div class="search-box chat-search-box">
                                     <div class="input-group bg-light  input-group-lg rounded-3">
                                         <div class="input-group-prepend">
+<<<<<<< HEAD
                                             <button class="btn btn-link text-decoration-none text-muted pe-1 ps-3" type="button">
                                                 <i class="ri-search-line search-icon font-size-18"></i>
                                             </button>
+=======
+                                        <button class="btn nav-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <i class="ri-search-line"></i>
+                                         </button>
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                                         </div>
                                         <input type="text" class="form-control bg-light" placeholder="Search users..">
                                     </div>
@@ -824,6 +993,10 @@
                             <!-- end p-4 -->
 
                             <!-- Start contact lists -->
+<<<<<<< HEAD
+=======
+                            <div class="search">
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                             <div class="p-4 chat-message-list chat-group-list" data-simplebar>
         
                                 <div>
@@ -1269,6 +1442,10 @@
                                 </div>
                                 <!-- end contact list S -->
                             </div>
+<<<<<<< HEAD
+=======
+                        </div>
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                             <!-- end contact lists -->
                         </div>
                         <!-- Start Contact content -->
@@ -1285,7 +1462,11 @@
 
                             <div class="text-center border-bottom p-4">
                                 <div class="mb-4 profile-user">
+<<<<<<< HEAD
                                 <img src="server/uploads/<?php echo $row['img']?>" class="rounded-circle avatar-lg img-thumbnail" alt="">
+=======
+                                    <img src="server/uploads/<?php echo $row['img']?>" class="rounded-circle avatar-lg img-thumbnail" alt="">
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                                     <button type="button" class="btn btn-light bg-light avatar-xs p-0 rounded-circle profile-photo-edit">
                                         <i class="ri-pencil-fill"></i>
                                     </button>
@@ -1314,9 +1495,14 @@
                                                 <h5 class="font-size-14 m-0">Personal Info</h5>
                                             </button>
                                         </div>
+<<<<<<< HEAD
                                        
                                         <div id="personalinfo" class="accordion-collapse collapse show" aria-labelledby="personalinfo1" data-bs-parent="#settingprofile">
                                         <div class="accordion-body">
+=======
+                                        <div id="personalinfo" class="accordion-collapse collapse show" aria-labelledby="personalinfo1" data-bs-parent="#settingprofile">
+                                            <div class="accordion-body">
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                                                 <div class="float-end">
                                                     <button type="button" class="btn btn-light btn-sm"><i class="ri-edit-fill me-1 ms-0 align-middle"></i> Edit</button>
                                                 </div>
@@ -1523,10 +1709,17 @@
                                             <a href="javascript: void(0);" class="user-chat-remove text-muted font-size-16 p-2"><i class="ri-arrow-left-s-line"></i></a>
                                         </div>
                                         <div class="me-3 ms-0">
+<<<<<<< HEAD
                                         <img src="server/uploads/<?php echo $row['img']; ?>" alt="" class="rounded-circle avatar-xs" alt="">
                                         </div>
                                         <div class="flex-grow-1 overflow-hidden">
                                         <h5 class="font-size-16 mb-0 text-truncate"><a href="#" class="text-reset user-profile-show"><?php echo $row['fname']. " " . $row['lname'] ?></a> <i class="ri-record-circle-fill font-size-10 text-success d-inline-block ms-1"></i></h5>
+=======
+                                            <img src="assets/images/users/avatar-4.jpg" class="rounded-circle avatar-xs" alt="">
+                                        </div>
+                                        <div class="flex-grow-1 overflow-hidden">
+                                            <h5 class="font-size-16 mb-0 text-truncate"><a href="#" class="text-reset user-profile-show">Doris Brown</a> <i class="ri-record-circle-fill font-size-10 text-success d-inline-block ms-1"></i></h5>
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                                         </div>
                                     </div>
                                 </div>
@@ -1585,6 +1778,7 @@
                         <!-- end chat user head -->
     
                         <!-- start chat conversation -->
+<<<<<<< HEAD
                         <section class="chat-area">     
                     <?php 
                         $user_id = mysqli_real_escape_string($connection, $_SESSION['unique_id']);
@@ -1600,10 +1794,20 @@
                                     <div class="conversation-list">
                                         <div class="chat-avatar">
                                         <img src="server/uploads/<?php echo $row['img']; ?>" alt="">
+=======
+                        <section class="chat-area">       
+                           <div class="chat-conversation p-3 p-lg-4" data-simplebar="init">
+                            <ul class="list-unstyled mb-0">
+                                <li class="right">
+                                    <div class="conversation-list">
+                                        <div class="chat-avatar">
+                                        <img src="server/uploads/<?php echo $row['img']; ?>" alt="">        
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                                         </div>
     
                                         <div class="user-chat-content">
                                             <div class="ctext-wrap">
+<<<<<<< HEAD
                                                 <div class="ctext-wrap-content">
                                                     <p class="mb-0">
                                                         Good morning, How are you? What about our next meeting?
@@ -1614,6 +1818,24 @@
                                                 <div class="dropdown align-self-start">
                                                     <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         <i class="ri-more-2-fill"></i>
+=======
+                                               <div class="ctext-wrap-content">
+                                                    <p class="mb-0">
+                                                    <div class="chat-box">
+                                                            cvbnfghvgbhnvbn
+                                                       </div>  
+                                                    </p>
+                                                    <p class="chat-time mb-0"><i class="ri-time-line align-middle"></i> <span class="align-middle">10:02</span></p>
+                                                </div>                   
+                                       
+                                                    
+                                                    <!-- <p class="chat-time mb-0"><i class="ri-time-line align-middle"></i> <span class="align-middle">10:02</span></p> -->
+                                                
+                                                    
+                                                    <div class="dropdown align-self-start">
+                                                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                       
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                                                     </a>
                                                     <div class="dropdown-menu">
                                                         <a class="dropdown-item" href="#">Copy <i class="ri-file-copy-line float-end text-muted"></i></a>
@@ -1628,6 +1850,7 @@
                                         </div>
                                     </div>
                                 </li>
+<<<<<<< HEAD
 
                                 <li> 
                                     <div class="chat-day-title">
@@ -1651,6 +1874,20 @@
                                 <input type="text" class="incoming_id" name="incoming_id" value="<?php echo $user_id; ?>" hidden>
                                 <input type="text" name="message"  class="form-control form-control-lg bg-light border-light"  placeholder="Enter Message..."  autocomplete="off"> 
                             </div>
+=======
+                            </ul>
+                        </div>
+                        <!-- end chat conversation end -->
+    
+                        <!-- start chat input section -->
+                            <form action="#" class="typing-area">
+                            <div class="chat-input-section p-3 p-lg-4 border-top mb-0">
+                             <div class="row g-0">                             
+                                <div class="col">
+                                    <input type="text" class="incoming_id" name="incoming_id" value="<?php echo $user_id; ?>" hidden>
+                                    <input type="text" name="message"  class="form-control form-control-lg bg-light border-light" placeholder="Enter Message..." autocomplete="off"> 
+                                </div>
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                                 <div class="col-auto">
                                     <div class="chat-input-links ms-md-2 me-md-0">
                                         <ul class="list-inline mb-0">
@@ -1665,17 +1902,31 @@
                                                 </button>
                                             </li>
                                             <li class="list-inline-item">
+<<<<<<< HEAD
                                                 <button type="submit" class="btn btn-primary font-size-16 btn-lg chat-send waves-effect waves-light">
+=======
+                                                <button class="btn btn-primary font-size-16 btn-lg chat-send waves-effect waves-light">
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                                                     <i class="ri-send-plane-2-fill"></i>
                                                 </button>
                                             </li>
                                         </ul>
                                     </div>
+<<<<<<< HEAD
                                     
                                 </div>
                             </div>
                         </div>
                         </form>
+=======
+                                      
+                                  </div>
+                                </div>
+                               </div>
+                            </form>
+                        </section>
+                       
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                         <!-- end chat input section -->
                     </div>
                     <!-- end chat conversation section -->
@@ -1692,11 +1943,19 @@
 
                         <div class="text-center p-4 border-bottom">
                             <div class="mb-4">
+<<<<<<< HEAD
                                 <img src="server/uploads/<?php echo $row['img']; ?>" class="rounded-circle avatar-lg img-thumbnail" alt="">
                             </div>
 
                             <h5 class="font-size-16 mb-1 text-truncate"><?php echo $row['fname']. " " . $row['lname'] ?></h5>
                             <p class="text-muted text-truncate mb-1"><i class="ri-record-circle-fill font-size-10 text-success me-1 ms-0"></i><?php echo $row['status'];?></p>
+=======
+                                <img src="assets/images/users/avatar-4.jpg" class="rounded-circle avatar-lg img-thumbnail" alt="">
+                            </div>
+
+                            <h5 class="font-size-16 mb-1 text-truncate">Doris Brown</h5>
+                            <p class="text-muted text-truncate mb-1"><i class="ri-record-circle-fill font-size-10 text-success me-1 ms-0"></i> Active</p>
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                         </div>
                         <!-- End profile user -->
 
@@ -1717,6 +1976,7 @@
                                         </button>
                                     </div>
                                     <div id="aboutprofile" class="accordion-collapse collapse show" aria-labelledby="about3" data-bs-parent="#myprofile">
+<<<<<<< HEAD
                                     <div class="accordion-body">
                                         <div>
                                                     <p class="text-muted mb-1">Name</p>
@@ -1747,6 +2007,28 @@
                                                     <p class="text-muted mb-1">Location</p>
                                                     <h5 class="font-size-14"><?php echo $row['country'];?></h5>
                                                 </div>
+=======
+                                        <div class="accordion-body">
+                                            <div>
+                                                <p class="text-muted mb-1">Name</p>
+                                                <h5 class="font-size-14">Doris Brown</h5>
+                                            </div>
+
+                                            <div class="mt-4">
+                                                <p class="text-muted mb-1">Email</p>
+                                                <h5 class="font-size-14">adc@123.com</h5>
+                                            </div>
+
+                                            <div class="mt-4">
+                                                <p class="text-muted mb-1">Time</p>
+                                                <h5 class="font-size-14">11:40 AM</h5>
+                                            </div>
+
+                                            <div class="mt-4">
+                                                <p class="text-muted mb-1">Location</p>
+                                                <h5 class="font-size-14 mb-0">California, USA</h5>
+                                            </div>
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                                         </div>
                                     </div>
                                 </div>
@@ -1930,7 +2212,11 @@
                                     <img src="assets/images/users/avatar-4.jpg" alt="" class="img-thumbnail rounded-circle">
                                 </div>
 
+<<<<<<< HEAD
                                 <h5 class="text-truncate"><?php echo $row['fname']. " " . $row['lname'];?></h5>
+=======
+                                <h5 class="text-truncate">Doris Brown</h5>
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                                 <p class="text-muted">Start Audio Call</p>
 
                                 <div class="mt-5">
@@ -1968,7 +2254,11 @@
                                     <img src="assets/images/users/avatar-4.jpg" alt="" class="img-thumbnail rounded-circle">
                                 </div>
 
+<<<<<<< HEAD
                                 <h5 class="text-truncate"><?php echo $row['fname']. " " . $row['lname'];?></h5>
+=======
+                                <h5 class="text-truncate">Doris Brown</h5>
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                                 <p class="text-muted mb-0">Start Video Call</p>
 
                                 <div class="mt-5">
@@ -1998,8 +2288,13 @@
         </div>
         <!-- end  layout wrapper -->
 
+<<<<<<< HEAD
          <!-- JAVASCRIPT -->
          <script src="assets/libs/jquery/jquery.min.js"></script>
+=======
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/jquery/jquery.min.js"></script>
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
         <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="assets/libs/simplebar/simplebar.min.js"></script>
         <script src="assets/libs/node-waves/waves.min.js"></script>
@@ -2015,9 +2310,15 @@
 
         <script src="assets/js/app.js"></script>
         <script src="javascript/users.js"></script>
+<<<<<<< HEAD
         <script src="javascript/chat.js"></script>
       
 
+=======
+      
+
+
+>>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
     </body>
 
 <!-- Mirrored from themesbrand.com/chatvia/layouts/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 31 May 2022 12:38:03 GMT -->
