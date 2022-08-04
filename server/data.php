@@ -3,11 +3,7 @@
         $sql2 = "SELECT * FROM messages WHERE (incoming_msg_id = {$row['unique_id']}
                 OR outgoing_msg_id = {$row['unique_id']}) AND (outgoing_msg_id = {$outgoing_id} 
                 OR incoming_msg_id = {$outgoing_id}) ORDER BY msg_id DESC LIMIT 1";
-<<<<<<< HEAD
         $query2 = mysqli_query($connection, $sql2);
-=======
-        $query2 = mysqli_query($conn, $sql2);
->>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
         $row2 = mysqli_fetch_assoc($query2);
         (mysqli_num_rows($query2) > 0) ? $result = $row2['msg'] : $result ="No message available";
         (strlen($result) > 28) ? $msg =  substr($result, 0, 28) . '...' : $msg = $result;
@@ -19,7 +15,6 @@
         ($row['status'] == "Offline now") ? $offline = "offline" : $offline = "";
         ($outgoing_id == $row['unique_id']) ? $hid_me = "hide" : $hid_me = "";
 
-<<<<<<< HEAD
         $output .= ' 
            <ul class="list-unstyled chat-list chat-user-list">
             <li>
@@ -55,17 +50,3 @@
 
 
 
-=======
-        // $output .= '<a href="chat.php?user_id='. $row['unique_id'] .'">
-        //             <div class="content">
-        //             <img src="php/images/'. $row['img'] .'" alt="">
-        //             <div class="details">
-        //                 <span>'. $row['fname']. " " . $row['lname'] .'</span>
-        //                 <p>'. $you . $msg .'</p>
-        //             </div>
-        //             </div>
-        //             <div class="status-dot '. $offline .'"><i class="fas fa-circle"></i></div>
-        //         </a>';
-    }
-?>
->>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824

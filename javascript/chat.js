@@ -1,7 +1,7 @@
 const form = document.querySelector(".typing-area"),
 incoming_id = form.querySelector(".incoming_id").value,
-inputField = form.querySelector(".form-control"),
-sendBtn = form.querySelector("button"),
+inputField = document.querySelector("#inPutField"),
+sendBtn = document.querySelector("#button"),
 chatBox = document.querySelector(".chat-box");
 
 form.onsubmit = (e)=>{
@@ -41,11 +41,7 @@ chatBox.onmouseleave = ()=>{
 
 setInterval(() =>{
     let xhr = new XMLHttpRequest();
-<<<<<<< HEAD
     xhr.open("POST", "server/get-chat.php", true);
-=======
-    xhr.open("POST", "php/get-chat.php", true);
->>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
     xhr.onload = ()=>{
       if(xhr.readyState === XMLHttpRequest.DONE){
           if(xhr.status === 200){

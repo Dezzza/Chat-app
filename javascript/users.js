@@ -1,18 +1,8 @@
-<<<<<<< HEAD
 const searchBar = document.querySelector(".search-box input"),
 searchIcon   = document.querySelector(".search-box button"),
 usersList = document.querySelector(".users-list");
 
 searchIcon.onclick = ()=>{
-=======
-const searchBar = document.querySelector(".search input"),
-searchIcon   = document.querySelector(".search button"),
-usersList = document.querySelector(".users-list");
-
-searchIcon.onclick = ()=>{
-  searchBar.classList.toogle("show");
-  searchIcon.classList.toogle("active");
->>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
   searchBar.focus();
   if (searchBar.classList.contains("active")) {
     searchBar.value="";
@@ -55,35 +45,9 @@ setInterval(()=>{
       }
     }
   }
-<<<<<<< HEAD
   xhr.send();
 }, 500);
 
-// const switchButton = document.getElementById('switch');
-// const workContainer = document.getElementById('work');
- 
-// switchButton.addEventListener('click', () => {
-//     document.body.classList.toggle('dark'); //toggle the HTML body the class 'dark'
-//     switchButton.classList.toggle('active');//toggle the HTML button with the id='switch' with the class 'active''
-//     workContainer.classList.toggle('dark');
- 
-//     if(document.body.classList.contains('dark')){ //when the body has the class 'dark' currently
-//         localStorage.setItem('darkMode', 'enabled'); //store this data if dark mode is on
-//     }else{
-//         localStorage.setItem('darkMode', 'disabled'); //store this data if dark mode is off
-//     }
-// });
- 
-// if(localStorage.getItem('darkMode') == 'enabled'){
-//     document.body.classList.toggle('dark');
-//     switchButton.classList.toggle('active');
-//     workContainer.classList.toggle('dark');
-// }
-=======
-}, 500);
-
-
->>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
 
 
 

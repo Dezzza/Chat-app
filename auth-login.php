@@ -64,11 +64,7 @@
                         </div>
 
                         <div class="mt-5 text-center">
-<<<<<<< HEAD
                             <p>© <script>document.write(new Date().getFullYear())</script> Chat. Crafted with <i class="mdi mdi-heart text-danger"></i> by Dezza</p>
-=======
-                            <p>© <script>document.write(new Date().getFullYear())</script> Chatvia. Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand</p>
->>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
                         </div>
                     </div>
                 </div>

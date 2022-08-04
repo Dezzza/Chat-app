@@ -243,11 +243,7 @@ btn = className('btn-success')
   }
   datas.append(btn['0'].name,'')
   msg = className('msg')
-<<<<<<< HEAD
   xhr.open('POST','server/update.php')
-=======
-  xhr.open('POST','./server/update.php')
->>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
       xhr.onreadystatechange =(e)=>{
         if (e.target.status==200 && e.target.readyState==4) {
       res = e.target.response
@@ -261,11 +257,7 @@ btn = className('btn-success')
   xhr.send(datas)
  }
  window.onload=()=>{
-<<<<<<< HEAD
   xhr.open('POST','server/update.php')
-=======
-  xhr.open('POST','./server/update.php')
->>>>>>> 2f0c52dd718ada22dc31c1125f6fdf78a3d19824
       xhr.onreadystatechange =(e)=>{
         if (e.target.status==200 && e.target.readyState==4) {
       res = e.target.response
