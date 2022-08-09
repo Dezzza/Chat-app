@@ -18,7 +18,7 @@
         $output .= ' 
            <ul class="list-unstyled chat-list chat-user-list">
             <li>
-            <a href="index.php?user_id'. $row['unique_id'] .'">
+            <a href="index.php?user_id='. $row['unique_id'] .'">
             <div class="d-flex">                            
                 <div class="chat-user-img online align-self-center me-3 ms-0">
                     <img src="server/uploads/'.$row['img'] . '" class="rounded-circle avatar-xs" alt="">

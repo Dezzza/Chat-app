@@ -46,7 +46,7 @@
                                 <i class="ri-user-2-line"></i>
                             </a>
                         </li>
-                        <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Chats">
+                        <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Chats" onclick="getusers()">
                             <a class="nav-link active" id="pills-chat-tab" data-bs-toggle="pill" href="#pills-chat" role="tab">
                                 <i class="ri-message-3-line"></i>
                             </a>
@@ -132,7 +132,7 @@
                                 </div>
 
                                 <h5 class="font-size-16 mb-1 text-truncate"><?php echo $row['fname']. " " . $row['lname'];?></h5>
-                                <p class="text-muted text-truncate mb-1"><?php echo $row['status'];?>></i></p>
+                                <p class="text-muted text-truncate mb-1"><?php echo $row['status'];?></i></p>
                             </div>
                             <!-- End profile user -->
 
@@ -1578,14 +1578,9 @@
                         <!-- start chat conversation -->
                        
                         <div class="chat-conversation p-3 p-lg-4" data-simplebar="init">
-                            <ul class="list-unstyled mb-0">
+                            <ul class="list-unstyled mb-0 chat-box">
     
-                                <li class="right">
-                                    <div class="chat-box">
-                                                                
-                                    </div>
-                                </li>
-
+                                    
                                 <li> 
                                     <div class="chat-day-title">
                                         <span class="title">Today</span>
@@ -1604,7 +1599,7 @@
                                 
                             <div class="col">
                                 <input type="text" class="incoming_id" name="incoming_id" value="<?php echo $user_id; ?>" hidden>
-                                <input type="text" name="message"  class="form-control form-control-lg bg-light border-light" id="inPutFiled" placeholder="Enter Message..."  autocomplete="off"> 
+                                <input type="text" name="message"  class="form-control form-control-lg bg-light border-light"  placeholder="Enter Message..."  autocomplete="off"> 
                             </div>
                                 <div class="col-auto">
                                     <div class="chat-input-links ms-md-2 me-md-0">
@@ -1638,7 +1633,7 @@
     
                     <!-- start User profile detail sidebar -->
                     <div class="user-profile-sidebar">
-                        <div class="px-3 px-lg-4 pt-3 pt-lg-4">
+                        <div class="px-3 px-lg-4 pt-3">
                             <div class="user-chat-nav text-end">
                                 <button type="button" class="btn nav-btn" id="user-profile-hide">
                                     <i class="ri-close-line"></i>
@@ -1676,7 +1671,7 @@
                                     <div class="accordion-body">
                                         <div>
                                                     <p class="text-muted mb-1">Name</p>
-                                                    <h5 class="font-size-14"><?php echo $rowuser['fname']. " " . $row['lname'];?></h5>
+                                                    <h5 class="font-size-14"><?php echo $rowuser['fname']. " " . $rowuser['lname'];?></h5>
                                                 </div>
 
                                                 <div class="mt-4">
@@ -1888,7 +1883,7 @@
                                     <img src="assets/images/users/avatar-4.jpg" alt="" class="img-thumbnail rounded-circle">
                                 </div>
 
-                                <h5 class="text-truncate"><?php echo $row['fname']. " " . $row['lname'];?></h5>
+                                <h5 class="text-truncate"><?php echo $rowuser['fname']. " " . $rowuser['lname'];?></h5>
                                 <p class="text-muted">Start Audio Call</p>
 
                                 <div class="mt-5">
@@ -1926,7 +1921,7 @@
                                     <img src="assets/images/users/avatar-4.jpg" alt="" class="img-thumbnail rounded-circle">
                                 </div>
 
-                                <h5 class="text-truncate"><?php echo $row['fname']. " " . $row['lname'];?></h5>
+                                <h5 class="text-truncate"><?php echo $rowuser['fname']. " " . $rowuser['lname'];?></h5>
                                 <p class="text-muted mb-0">Start Video Call</p>
 
                                 <div class="mt-5">

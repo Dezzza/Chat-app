@@ -1,6 +1,7 @@
+const button = document.getElementById('button');
 const form = document.querySelector(".typing-area"),
 incoming_id = form.querySelector(".incoming_id").value,
-inputField = document.querySelector("#inPutField"),
+inputField = document.querySelector(".form-control"),
 sendBtn = document.querySelector("#button"),
 chatBox = document.querySelector(".chat-box");
 
@@ -31,6 +32,7 @@ sendBtn.onclick = ()=>{
     let formData = new FormData(form);
     xhr.send(formData);
 }
+
 chatBox.onmouseenter = ()=>{
     chatBox.classList.add("active");
 }
@@ -46,8 +48,9 @@ setInterval(() =>{
       if(xhr.readyState === XMLHttpRequest.DONE){
           if(xhr.status === 200){
             let data = xhr.response;
+            // console.log(data)
             chatBox.innerHTML = data;
-            if(!chatBox.classList.contains("active")){
+            if(!chatBox){
                 scrollToBottom();
               }
           }
@@ -55,7 +58,7 @@ setInterval(() =>{
     }
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhr.send("incoming_id="+incoming_id);
-}, 500);
+}, 1500);
 
 function scrollToBottom(){
     chatBox.scrollTop = chatBox.scrollHeight;
