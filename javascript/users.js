@@ -32,22 +32,24 @@ searchBar.onkeyup=()=>{
   xhr.send("searchTerm=" + searchTerm);
 }
 
-function getusers(params) {
+// function getusers() {
 
-  let xhr = new XMLHttpRequest();
-  xhr.open("GET", "server/users.php", true);
-  xhr.onload = ()=>{
-    if (xhr.readyState === XMLHttpRequest.DONE) {
-      if (xhr.status === 200) {
-        let data = xhr.response;
-        if (!searchBar.classList.contains("active")) {
-          usersList.innerHTML = data;
-        }
-      }
-    }
-  }
-  xhr.send();
-}
+//   let xhr = new XMLHttpRequest();
+//   xhr.open("GET", "server/users.php", true);
+//   xhr.onload = ()=>{
+//     if (xhr.readyState === XMLHttpRequest.DONE) {
+//       if (xhr.status === 200) {
+//         let data = xhr.response;
+//         if (!searchBar.classList.contains("active")) {
+//           usersList.innerHTML = data;
+//         }
+//       }
+//     }
+//   }
+//   xhr.send();
+// }
+
+setInterval(() =>{
 let xhr = new XMLHttpRequest();
   xhr.open("GET", "server/users.php", true);
   xhr.onload = ()=>{
@@ -61,7 +63,7 @@ let xhr = new XMLHttpRequest();
     }
   }
   xhr.send();
-
+}, 500);
 
 
 

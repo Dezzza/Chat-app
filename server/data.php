@@ -12,7 +12,7 @@
         }else{
             $you = "";
         }
-        ($row['status'] == "Offline now") ? $offline = "offline" : $offline = "";
+        ($row['status'] == "Offline now") ? $offline = "Offline" : $offline = "";
         ($outgoing_id == $row['unique_id']) ? $hid_me = "hide" : $hid_me = "";
 
         $output .= ' 

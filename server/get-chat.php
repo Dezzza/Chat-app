@@ -33,7 +33,7 @@
                                         <a class="dropdown-item" href="#">Copy <i class="ri-file-copy-line float-end text-muted"></i></a>
                                         <a class="dropdown-item" href="#">Save <i class="ri-save-line float-end text-muted"></i></a>
                                         <a class="dropdown-item" href="#">Forward <i class="ri-chat-forward-line float-end text-muted"></i></a>
-                                        <a class="dropdown-item" href="#">Delete <i class="ri-delete-bin-line float-end text-muted"></i></a>
+                                        <a class="dropdown-item" href="deletetext.php?user_id='. $row['msg_id'] .'" id="delete">Delete <i class="ri-delete-bin-line float-end text-muted"></i></a>
                                     </div>
                                 </div>
                             </div>
